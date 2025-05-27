@@ -3,7 +3,7 @@
     <!-- <Navigation /> -->
 
     <div class="background-image">
-      <img src="/public/img/background-home-desktop.jpg" alt="Space Background" />
+      <img src="/src/assets/home/background-home-desktop.jpg" alt="Space Background" />
     </div>
     <!-- Content -->
     <div class="container">
@@ -29,10 +29,10 @@
 // import Navigation from '@/components/Navbar.vue'
 
 export default {
-//   name: 'HomeView',
-//   components: {
-//     Navigation,
-//   },
+  //   name: 'HomeView',
+  //   components: {
+  //     Navigation,
+  //   },
 }
 </script>
 
