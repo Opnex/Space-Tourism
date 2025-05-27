@@ -3,7 +3,7 @@
     <!-- <Navigation /> -->
 
     <div class="background-image">
-      <img src="/public/background-home-desktop.jpg" alt="Space Background" />
+      <img src="/background-home-desktop.jpg" alt="Space Background" />
     </div>
     <!-- Content -->
     <div class="container">
@@ -49,7 +49,7 @@ export default {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('@/assets/home-background.jpg') no-repeat center center;
+  /* background: url('@/assets/home-background.jpg') no-repeat center center; */
   background-size: cover;
   z-index: -1;
 }
