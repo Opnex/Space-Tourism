@@ -3,7 +3,7 @@
     <!-- <Navigation /> -->
 
     <div class="background-image">
-      <img src="/src/assets/home/background-home-desktop.jpg" alt="Space Background" />
+      <img src="/assets/home/background-home-desktop.jpg" alt="Space Background" />
     </div>
     <!-- Content -->
     <div class="container">

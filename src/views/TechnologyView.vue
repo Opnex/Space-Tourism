@@ -2,7 +2,7 @@
   <div class="technology-page">
     <div class="background-image">
       <img
-        src="/src/assets/technology/background-technology-desktop.jpg"
+        src="/assets/technology/background-technology-desktop.jpg"
         alt="Technology Background"
       />
     </div>
@@ -55,21 +55,21 @@ export default {
           terminology: 'Launch Vehicle',
           description:
             "A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!",
-          image: '/src/assets/technology/image-launch-vehicle-portrait.jpg',
+          image: '/assets/technology/image-launch-vehicle-portrait.jpg',
         },
         {
           name: 'Spaceport',
           terminology: 'Spaceport',
           description:
             'A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, by analogy to the seaport for ships or airport for aircraft. This spaceport is the first of its kind, designed to accommodate the immense size of our WEB-X rocket.',
-          image: '/src/assets/technology/image-spaceport-portrait.jpg',
+          image: '/assets/technology/image-spaceport-portrait.jpg',
         },
         {
           name: 'Space Capsule',
           terminology: 'Space Capsule',
           description:
             "A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter the Earth's atmosphere without wings. The WEB-X capsule is designed to carry humans and cargo safely back to Earth.",
-          image: '/src/assets/technology/image-space-capsule-portrait.jpg',
+          image: '/assets/technology/image-space-capsule-portrait.jpg',
         },
       ],
     }
