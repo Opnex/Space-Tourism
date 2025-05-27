@@ -1,9 +1,9 @@
 <template>
   <div class="crew-page">
     <!-- <Navigation /> -->
-    
+
     <div class="background-image">
-        <img src="/public/background-crew-desktop.jpg" alt="Crew Background" />
+      <img src="/public/background-crew-desktop.jpg" alt="Crew Background" />
     </div>
 
     <!-- Page Content -->
@@ -24,18 +24,14 @@
               v-for="(member, index) in crewMembers"
               :key="index"
               @click="setCurrentCrewMember(member)"
-              :class="{ 'active': currentCrewMember.name === member.name }"
+              :class="{ active: currentCrewMember.name === member.name }"
               aria-label="Select crew member"
             ></button>
           </div>
         </div>
 
         <div class="col-lg-6 text-center">
-          <img 
-            :src="currentCrewMember.image" 
-            :alt="currentCrewMember.name"
-            class="crew-image"
-          />
+          <img :src="currentCrewMember.image" :alt="currentCrewMember.name" class="crew-image" />
         </div>
       </div>
     </div>
@@ -56,34 +52,35 @@ export default {
           name: "Douglas Hurley",
           role: "Commander",
           bio: "Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.",
-          image: ("/public/image-douglas-hurley.png")
+          image: ("./public/image-douglas-hurley.png")
         },
 
         {
           name: "Mark Shuttleworth",
           role: "Mission Specialist",
           bio: "Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu operating system. Shuttleworth became the first South African to travel to space as a space tourist.",
-          image: ("/public/image-mark-shuttleworth.png")
+          image: ("./public/image-mark-shuttleworth.png")
         },
-        
+
         {
           name: "Victor Glover",
           role: "Pilot",
           bio: "Victor Jerome Glover Jr. is a NASA astronaut of the class of 2013. He is a commander in the United States Navy and has served as a test pilot.",
-          image: ("/public/image-victor-glover.png")
+          image: ("./public/image-victor-glover.png")
         },
 
         {
           name: "Anousheh Ansari",
           role: "Flight Engineer",
           bio: "Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. Ansari was the fourth self-funded space tourist, the first self-funded woman to fly to the ISS, and the first Iranian in space.",
-          image: ("/public/image-anousheh-ansari.png")
+          image: ("./public/image-anousheh-ansari.png")
         },
       ]
     }
   },
   created() {
     this.currentCrewMember = this.crewMembers[0];
+    // console.log('Initial crew member:', this.currentCrewMember);
   },
   methods: {
     setCurrentCrewMember(member) {
@@ -160,8 +157,13 @@ export default {
 }
 
 @keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-20px); }
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
 }
 
 /* Mobile Layout */
@@ -170,13 +172,13 @@ export default {
     order: 2;
     text-align: center;
   }
-  
+
   .crew-image {
     order: 1;
     max-height: 50vh;
     margin-bottom: 2rem;
   }
-  
+
   .crew-nav {
     justify-content: center;
   }
