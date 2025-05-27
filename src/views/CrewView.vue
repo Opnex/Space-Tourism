@@ -3,7 +3,7 @@
     <!-- <Navigation /> -->
 
     <div class="background-image">
-      <img src="/public/background-crew-desktop.jpg" alt="Crew Background" />
+      <img src="/public/img/background-crew-desktop.jpg" alt="Crew Background" />
     </div>
 
     <!-- Page Content -->
