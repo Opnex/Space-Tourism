@@ -11,7 +11,6 @@
       <h5 class="page-title"><span>02</span>Meet your crew</h5>
 
       <div class="row align-items-center">
-        <!-- Crew Text (Left Column) -->
         <div class="col-lg-6 crew-text">
           <div class="crew-info">
             <h4 class="crew-role">{{ currentCrewMember.role }}</h4>
@@ -31,7 +30,6 @@
           </div>
         </div>
 
-        <!-- Crew Image (Right Column) -->
         <div class="col-lg-6 text-center">
           <img 
             :src="currentCrewMember.image" 
@@ -85,7 +83,7 @@ export default {
     }
   },
   created() {
-    this.currentCrewMember = this.crewMembers[0]; // Set default crew member
+    this.currentCrewMember = this.crewMembers[0];
   },
   methods: {
     setCurrentCrewMember(member) {

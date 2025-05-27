@@ -6,7 +6,6 @@
         <img src="/src/assets/shared/logo.svg" alt="Space Tourism Logo">
       </router-link>
 
-      <!-- Mobile Toggle Button -->
       <button 
         class="navbar-toggler" 
         type="button" 
@@ -16,7 +15,6 @@
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <!-- Navigation Links -->
       <div :class="['navbar-collapse', { 'show': isMenuOpen }]" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item" v-for="(item, index) in navItems" :key="index">
@@ -87,7 +85,6 @@ export default {
   margin-right: 0.5rem;
 }
 
-/* Mobile styles */
 @media (max-width: 992px) {
   .navbar-collapse {
     background: rgba(255, 255, 255, 0.1);

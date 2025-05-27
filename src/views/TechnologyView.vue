@@ -8,7 +8,6 @@
       <h5 class="page-title"><span>03</span>Space launch 101</h5>
       
       <div class="tech-content-wrapper">
-        <!-- Left Column: Number Navigation -->
         <div class="tech-nav-col">
           <div class="tech-nav">
             <button
@@ -22,7 +21,6 @@
           </div>
         </div>
 
-        <!-- Middle Column: Text Content -->
         <div class="tech-text-col">
           <div class="tech-info">
             <h4 class="tech-terminology">The terminology...</h4>
@@ -31,7 +29,6 @@
           </div>
         </div>
 
-        <!-- Right Column: Image -->
         <div class="tech-image-col">
           <img 
             :src="currentTechnology.image" 
@@ -76,7 +73,7 @@ export default {
     }
   },
   created() {
-    this.currentTechnology = this.technologies[0]; // Set default
+    this.currentTechnology = this.technologies[0];
   },
   methods: {
     setCurrentTechnology(tech) {
