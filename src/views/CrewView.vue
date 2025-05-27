@@ -3,7 +3,7 @@
     <!-- <Navigation /> -->
 
     <div class="background-image">
-      <img src="/public/img/background-crew-desktop.jpg" alt="Crew Background" />
+      <img src="/src/assets/crew/background-crew-desktop.jpg" alt="Crew Background" />
     </div>
 
     <!-- Page Content -->
@@ -42,51 +42,51 @@
 // import Navigation from '@/components/Navbar.vue';
 
 export default {
-//   name: 'CrewPage',
-//   components: { Navigation },
+  //   name: 'CrewPage',
+  //   components: { Navigation },
   data() {
     return {
       currentCrewMember: {},
       crewMembers: [
         {
-          name: "Douglas Hurley",
-          role: "Commander",
-          bio: "Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.",
-          image: ("./public/img/image-douglas-hurley.png")
+          name: 'Douglas Hurley',
+          role: 'Commander',
+          bio: 'Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.',
+          image: '/src/assets/crew/image-douglas-hurley.png',
         },
 
         {
-          name: "Mark Shuttleworth",
-          role: "Mission Specialist",
-          bio: "Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu operating system. Shuttleworth became the first South African to travel to space as a space tourist.",
-          image: ("./public/img/image-mark-shuttleworth.png")
+          name: 'Mark Shuttleworth',
+          role: 'Mission Specialist',
+          bio: 'Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu operating system. Shuttleworth became the first South African to travel to space as a space tourist.',
+          image: '/src/assets/crew/image-mark-shuttleworth.png',
         },
 
         {
-          name: "Victor Glover",
-          role: "Pilot",
-          bio: "Victor Jerome Glover Jr. is a NASA astronaut of the class of 2013. He is a commander in the United States Navy and has served as a test pilot.",
-          image: ("./public/img/image-victor-glover.png")
+          name: 'Victor Glover',
+          role: 'Pilot',
+          bio: 'Victor Jerome Glover Jr. is a NASA astronaut of the class of 2013. He is a commander in the United States Navy and has served as a test pilot.',
+          image: '/src/assets/crew/image-victor-glover.png',
         },
 
         {
-          name: "Anousheh Ansari",
-          role: "Flight Engineer",
-          bio: "Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. Ansari was the fourth self-funded space tourist, the first self-funded woman to fly to the ISS, and the first Iranian in space.",
-          image: ("./public/img/image-anousheh-ansari.png")
+          name: 'Anousheh Ansari',
+          role: 'Flight Engineer',
+          bio: 'Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. Ansari was the fourth self-funded space tourist, the first self-funded woman to fly to the ISS, and the first Iranian in space.',
+          image: '/src/assets/crew/image-anousheh-ansari.png',
         },
-      ]
+      ],
     }
   },
   created() {
-    this.currentCrewMember = this.crewMembers[0];
+    this.currentCrewMember = this.crewMembers[0]
     // console.log('Initial crew member:', this.currentCrewMember);
   },
   methods: {
     setCurrentCrewMember(member) {
-      this.currentCrewMember = member;
-    }
-  }
+      this.currentCrewMember = member
+    },
+  },
 }
 </script>
 

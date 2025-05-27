@@ -1,12 +1,15 @@
 <template>
   <div class="technology-page">
     <div class="background-image">
-      <img src="/public/img/background-technology-desktop.jpg" alt="Technology Background" />
+      <img
+        src="/src/assets/technology/background-technology-desktop.jpg"
+        alt="Technology Background"
+      />
     </div>
 
     <div class="container">
       <h5 class="page-title"><span>03</span>Space launch 101</h5>
-      
+
       <div class="tech-content-wrapper">
         <div class="tech-nav-col">
           <div class="tech-nav">
@@ -14,7 +17,7 @@
               v-for="(tech, index) in technologies"
               :key="index"
               @click="setCurrentTechnology(tech)"
-              :class="{ 'active': currentTechnology.name === tech.name }"
+              :class="{ active: currentTechnology.name === tech.name }"
             >
               {{ index + 1 }}
             </button>
@@ -30,11 +33,7 @@
         </div>
 
         <div class="tech-image-col">
-          <img 
-            :src="currentTechnology.image" 
-            :alt="currentTechnology.name"
-            class="tech-image"
-          />
+          <img :src="currentTechnology.image" :alt="currentTechnology.name" class="tech-image" />
         </div>
       </div>
     </div>
@@ -45,41 +44,44 @@
 // import Navigation from '@/components/Navbar.vue';
 
 export default {
-//   name: 'TechnologyPage',
-//   components: { Navigation },
+  //   name: 'TechnologyPage',
+  //   components: { Navigation },
   data() {
     return {
       currentTechnology: {},
       technologies: [
         {
-          name: "Launch Vehicle",
-          terminology: "Launch Vehicle",
-          description: "A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!",
-          image: ("/public/img/image-launch-vehicle-portrait.jpg")
+          name: 'Launch Vehicle',
+          terminology: 'Launch Vehicle',
+          description:
+            "A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!",
+          image: '/src/assets/technology/image-launch-vehicle-portrait.jpg',
         },
         {
-          name: "Spaceport",
-          terminology: "Spaceport",
-          description: "A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, by analogy to the seaport for ships or airport for aircraft. This spaceport is the first of its kind, designed to accommodate the immense size of our WEB-X rocket.",
-          image: ("/public/img/image-spaceport-portrait.jpg")
+          name: 'Spaceport',
+          terminology: 'Spaceport',
+          description:
+            'A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, by analogy to the seaport for ships or airport for aircraft. This spaceport is the first of its kind, designed to accommodate the immense size of our WEB-X rocket.',
+          image: '/src/assets/technology/image-spaceport-portrait.jpg',
         },
         {
-          name: "Space Capsule",
-          terminology: "Space Capsule",
-          description: "A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter the Earth's atmosphere without wings. The WEB-X capsule is designed to carry humans and cargo safely back to Earth.",
-          image: ("/public/img/image-space-capsule-portrait.jpg")
-        }
-      ]
+          name: 'Space Capsule',
+          terminology: 'Space Capsule',
+          description:
+            "A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter the Earth's atmosphere without wings. The WEB-X capsule is designed to carry humans and cargo safely back to Earth.",
+          image: '/src/assets/technology/image-space-capsule-portrait.jpg',
+        },
+      ],
     }
   },
   created() {
-    this.currentTechnology = this.technologies[0];
+    this.currentTechnology = this.technologies[0]
   },
   methods: {
     setCurrentTechnology(tech) {
-      this.currentTechnology = tech;
-    }
-  }
+      this.currentTechnology = tech
+    },
+  },
 }
 </script>
 
@@ -152,7 +154,7 @@ export default {
   font-size: 1.5rem;
   letter-spacing: 2.7px;
   text-transform: uppercase;
-  color: #D0D6F9;
+  color: #d0d6f9;
   margin-bottom: 2rem;
 }
 
@@ -165,7 +167,7 @@ export default {
 
 .tech-description {
   line-height: 1.7;
-  color: #D0D6F9;
+  color: #d0d6f9;
 }
 
 .tech-image-col {
